@@ -45,5 +45,15 @@
 				return 0;
 			} 
 		}
+
+		public function retrive($table,$column,$value,$data){
+			//Creating retriving column query
+			$query = "SELECT ";
+			foreach ($data as $value) {
+				$query .= $value." , ";
+			}
+			$query = rtrim($query,',');
+			$query .= " FROM ".$table." WHERE ";
+		}
 	}
 ?>
