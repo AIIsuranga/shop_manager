@@ -4,7 +4,7 @@
 		function __construct(){
 			$host = 'localhost';
 			$database = 'shop-order';
-			$username = '';
+			$username = '';			//Provide user name for the database server
 			$password = '';
 
 			$this->con = new mysqli_connect($host,$database,$username,$password);
